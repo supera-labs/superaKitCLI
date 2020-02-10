@@ -2,7 +2,7 @@
 import figlet = require('figlet');
 import chalk = require('chalk');
 console.log(
-    chalk.yellow(figlet.textSync('Lk-Cli', { horizontalLayout: 'full' }))
+    chalk.green(figlet.textSync('Supera Kit CLI', { horizontalLayout: 'full' }))
 );
 
 const { exec } = require('child_process');
