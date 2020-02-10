@@ -1,11 +1,11 @@
 export abstract class Action {
-    abstract createComponent();
+    abstract createComponent(): void;
 
-    abstract createFolder();
+    abstract createFolder(): void;
 
-    abstract getTemplates();
+    abstract getTemplates(): void;
 
-    abstract getRoot();
+    abstract getRoot(): void;
 
-    abstract setRoot();
+    abstract setRoot(): void;
 }

@@ -7,7 +7,15 @@
         "tsc": "tsc",
         "dev": "ts-node-dev --respawn --transpileOnly ./",
         "prod": "tsc && node ./build/index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "h": "node_modules/hygen/dist/bin.js",
+        "g": "yarn h generator",
+        "rntsc": "node_modules/hygen/dist/bin.js generator rntsc",
+        "lk": "yarn prod",
+        "init": "yarn h init"
+    },
+    "bin": {
+        "spkit": "./build/cli.js"
     },
     "keywords": [],
     "author": "",
@@ -23,12 +31,14 @@
         "clui": "^0.3.6",
         "configstore": "^5.0.0",
         "figlet": "^1.2.4",
+        "hygen": "^5.0.3",
         "inquirer": "^7.0.4",
         "lodash": "^4.17.15",
         "minimist": "^1.2.0",
         "simple-git": "^1.131.0",
         "touch": "^3.1.0",
         "ts-node-dev": "^1.0.0-pre.44",
-        "typescript": "^3.7.5"
+        "typescript": "^3.7.5",
+        "yargs": "^15.1.0"
     }
 }

@@ -6,7 +6,7 @@ export const files = {
         return path.basename(process.cwd());
     },
 
-    directoryExists: filePath => {
+    directoryExists: (filePath: string) => {
         return fs.existsSync(filePath);
     }
 };
